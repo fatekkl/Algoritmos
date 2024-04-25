@@ -1,6 +1,6 @@
-# Repositório com intuito de salvar meus algoritmos resolvidos via Leetcode
+# Reposiitory to save my LeetCode resolutions
 
-## Aqui você poderá ver minha resolução de problemas na prática e como aplico ela todos os dias no site LeetCode
+## Here you can see all my LeetCode resolutions, i do a little everyday, normally one.
 
 
-### ESSE REPOSITÓRIO ESTÁ EM CONSTANTE ATUALIZAÇÃO
+### This repository is constantly updating

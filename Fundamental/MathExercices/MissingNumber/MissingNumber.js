@@ -4,9 +4,10 @@
  */
 var missingNumber = function (nums) {
     const n = nums.length
+    const numSet = new Set(nums)
 
     for (let i = 0; i <= n; i++) {
-        if (!nums.includes(i)){
+        if (!numSet.has(i)){
             return i
         }
 

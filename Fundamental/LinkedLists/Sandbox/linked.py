@@ -37,5 +37,21 @@ class DoubleLinkedList:
         self.head = self.head.next
         if self.head:
             self.head.prev = None
+        else:
+            self.tail = None
+
+        return removed
+
+    def remove_from_end(self):
+        if not self.tail:
+            return None
+
+        removed = self.tail.value
+        self.tail = self.tail.prev
+
+        if self.tail:
+            self.tail.prev = None
+        else:
+            self.head = None
 
         return removed

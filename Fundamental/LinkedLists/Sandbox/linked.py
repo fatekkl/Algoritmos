@@ -55,3 +55,44 @@ class DoubleLinkedList:
             self.head = None
 
         return removed
+
+
+def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+    new_list = None
+
+    while head:
+        next_node = head.next
+        head.next = new_list
+        new_list = head
+        head = next_node
+
+    return new_list
+
+
+def middleNode(self, head: Optional[ListNode]) -> Optional[ListNode]:
+    ahead = head
+
+    while ahead and ahead.next:
+        ahead = ahead.next.next
+        head = head.next
+
+    return head
+
+
+def hasCycle(self, head: Optional[ListNode]) -> bool:
+    slow = head
+    fast = head
+
+    counter = 0
+
+    while fast and fast.next:
+        fast = fast.next.next
+        slow = slow.next
+        counter += 1
+
+        if fast == slow:
+            print(counter)
+            return True
+
+    print(counter)
+    return False
